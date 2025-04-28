@@ -1,0 +1,7 @@
+@import url(global.css);
+@import url(header.css);
+@import url(card.css);  
+@import url(services.css);  
+@import url(footer.css);  
+
+section {min-height: 100vh;}

@@ -1,0 +1,82 @@
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-block: 24px;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+#title-works{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+
+    span{
+        font: var(--subtitle);
+        text-align: center;
+        color: var(--red)
+    }
+
+    h2 {
+        font: var(--text-md);
+    }
+}
+
+
+figure {
+    height: 280px;
+    width: 330px;
+    background-color: var(--gray-300);
+    border-radius: 16px;
+    
+    img {
+        display: flex;
+        height: 156px;
+        width: 303px;
+        object-fit: cover;
+        justify-self: center;
+        margin-top: 10px;
+        border-radius: 16px;
+
+      
+    }
+    
+    span {
+        display: flex;
+
+        margin-top: 30px;
+
+        font-family: 'Asap';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    h2 {
+        
+
+        margin-top: 10px;
+
+        font-family: 'Maven Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+
+    }
+
+
+
+
+}
+

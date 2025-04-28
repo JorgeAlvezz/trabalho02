@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+
+    height: 100vh;
+    background: no-repeat url("/css/assets/Background_Intro.png");
+}
+:root {
+    /* variaveis de cores principais dos items */ 
+    --red: #E3646E;
+    --purple: #BB72E9;
+    --blue: #3996DB;
+    --green: #82BC4F;
+    --yellow: #EABD5F;
+
+    /* variaveis de cores principais do fundo */ 
+
+    --gray-100: #0d0e11;
+    --gray-200: #16181D;
+    --gray-300: #292C34;
+    --gray-400: #878EA1;
+    --gray-500: #C0C4CE;
+    --gray-600: #E2E4E9;
+
+    --principal-font: 'Asap';
+    --title-lg: 600 56px/120% var(--principal-font);
+    --title-md: 600 24px/120% var(--principal-font);
+    --title-sm: 600 16px/120% var(--principal-font);
+
+    --secondary-font: 'Inconsolata';
+    --subtitle: 400 20px/120% var(--secondary-font);
+
+    --text-font: 'Maven Pro';
+    --text-mp: 400 16px/140% var(--text-font);
+    --text-smmp: 400 14px/140% var(--text-font);
+
+    
+}
+
+body {
+    color:var(--gray-600);
+    background-color: var(--gray-200);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: var(--blue);
+}
+
+h1 {
+    font: var(--title-lg);
+}
+
+h2 {
+    font: var(--subtitle);
+}
+
+a, p {
+    font: var(--text-font)
+}
+
+/* classe utilitaria */
+.grid {
+    display: grid;
+}
+
+.grid-flow-col {
+    grid-auto-flow: column;
+}
+
