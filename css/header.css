@@ -1,8 +1,8 @@
 #primary {
     box-sizing: border-box;
 
-    /* Auto layout */
-    display: fixed;
+
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -28,7 +28,7 @@
     width: 1040px;
     height: 447px;
     left: calc(50% - 1040px/2);
-    top: 120px;
+    top: 20px;
 
 
 }
@@ -73,7 +73,7 @@
     color: var(--red)
 }
 
-#primary img#jorge{
+#primary img#jorge {
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -81,6 +81,7 @@
 }
 
 #nav span {
+
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -94,6 +95,7 @@
     border-radius: 40px;
     
     font: var(--text-smmp);
+    
 
 
 }

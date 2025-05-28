@@ -20,6 +20,8 @@ padding: 0px;
 gap: 12px;
 
 
+
+
     span{
         font: var(--subtitle);
         text-align: center;
@@ -46,6 +48,7 @@ figure {
         justify-self: center;
         margin-top: 10px;
         border-radius: 16px;
+        
 
       
     }
