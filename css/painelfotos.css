@@ -1,0 +1,43 @@
+.painelgeral{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    height: 100vh;
+    margin: auto;
+    background-color: var(--gray-100);
+}
+
+.painel-fotos {
+  display: grid;
+  grid-template-columns: 1.7fr 1.2fr 2fr;
+  grid-auto-flow: row;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  height: 70vh;
+  max-height: 100vh;
+  box-sizing: border-box;
+
+
+}
+
+.foto {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Layout para telas pequenas */
+@media (max-width: 768px) {
+  .painel-fotos {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 150px;
+  }
+
+  .foto {
+    height: auto;
+    aspect-ratio: 16 / 9; /* Mantém proporção sem causar overflow */
+  }
+}

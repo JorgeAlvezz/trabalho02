@@ -1,0 +1,26 @@
+/* Estilo para tornar o menu fixo */
+#menu-fixo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #111;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+#menu-fixo a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#menu-fixo a:hover {
+  color: #00bcd4;
+}
+
+

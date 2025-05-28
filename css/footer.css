@@ -12,10 +12,6 @@ footer{
 }
 
 #title-footer{
-    display: fixed;
-    text-align: center;
-
-
         h2 {
             font: var(--subtitle);
             color: var(--red);
@@ -32,6 +28,7 @@ footer{
 #contact {
 
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 padding: 0px;
@@ -49,3 +46,8 @@ border-radius: 8px;
 
 }
 
+@media (max-width: 600px) {
+  .contact {
+    grid-template-columns: row;
+  }
+}

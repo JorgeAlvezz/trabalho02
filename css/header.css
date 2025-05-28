@@ -1,18 +1,17 @@
 #primary {
     box-sizing: border-box;
-
-
+    flex-wrap: wrap;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0px;
+
     gap: 56px;
 
     width: 680px;
     height: 327px;
 
     text-align: center;
+
 
 }
 
@@ -28,21 +27,19 @@
     width: 1040px;
     height: 447px;
     left: calc(50% - 1040px/2);
-    top: 20px;
+    top: 130px;
+
+
 
 
 }
 
 #stacks {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
+    flex-wrap: wrap;
+
+
     gap: 16px;
-
-    width: 754px;
-    height: 40px;
-
 
 }
 
@@ -85,8 +82,6 @@
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-
-
 
     width: 150px;
     height: 20px;

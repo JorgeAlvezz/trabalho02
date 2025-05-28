@@ -13,67 +13,74 @@
     <link rel="stylesheet" href="css/estilo.css">
 
     <title>Trabalho 2 - Design Interfaces</title>
+
 </head>
 
 <body>
     <header>
-        <div id="header">
-            <div id="info">
-                <nav id="primary">
-                    <div>
-                        <img id="jorge" src="css/assets/foto.jpeg" alt="Minha foto">
-                        <img src="css/assets/Vector.svg" alt="DEV">
-                    </div>
-                    <div>
-                        <h2>Hello World! Meu nome é <a>Jorge Alves</a> e sou</h2>
-                        <h1>Desenvolvedor Fullstack </h1>
-                        <p>Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas
-                            através
-                            da minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para
-                            desafios
-                            complexos.</p>
-                    </div>
-                </nav>
-                <nav id="nav">
-                    <span><a href="#title-works"> Portfólio </a></span>
-                    <span><a href="#title-services">Tipos de serviços </a></span>
-                </nav>
-                <nav id="stacks">
-                    <span>
-                        <img src="css/assets/GitHub.svg" alt="">
-                        <a href="#">Github</a>
-                    </span>
-                    <span>
-                        <img src="css/assets/HTML.svg" alt="">
-                        <a href="#">HTMl</a>
-                    </span>
-                    <span>
-                        <img src="css/assets/CSS.svg" alt="">
-                        <a href="#">CSS</a>
-                    </span>
-                    <span>
-                        <img src="css/assets/JavaScript.svg" alt="">
-                        <a href="#">JavaScript</a>
-                    </span>
-                    <span>
-                        <img src="css/assets/React.svg" alt="">
-                        <a href="#">React</a>
-                    </span>
-                    <span>
-                        <img src="css/assets/Node.js.svg" alt="">
-                        <a href="#">Node.js</a>
-                    </span>
-                </nav>
-            </div>
+        <div id="info">
+            <nav id="primary">
+                <div>
+                    <img id="jorge" src="css/assets/foto.jpeg" alt="Minha foto">
+                    <img src="css/assets/Vector.svg" alt="DEV">
+                </div>
+                <div>
+                    <h2>Hello World! Meu nome é <a>Jorge Alves</a> e sou</h2>
+                    <h1>Desenvolvedor Fullstack </h1>
+                    <p>Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas
+                        através
+                        da minha paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para
+                        desafios
+                        complexos.</p>
+                </div>
+            </nav>
+            <nav id="stacks">
+                <span>
+                    <img src="css/assets/GitHub.svg" alt="">
+                    <a href="#">Github</a>
+                </span>
+                <span>
+                    <img src="css/assets/HTML.svg" alt="">
+                    <a href="#">HTML</a>
+                </span>
+                <span>
+                    <img src="css/assets/CSS.svg" alt="">
+                    <a href="#">CSS</a>
+                </span>
+                <span>
+                    <img src="css/assets/JavaScript.svg" alt="">
+                    <a href="#">JavaScript</a>
+                </span>
+                <span>
+                    <img src="css/assets/React.svg" alt="">
+                    <a href="#">React</a>
+                </span>
+                <span>
+                    <img src="css/assets/Node.js.svg" alt="">
+                    <a href="#">Node.js</a>
+                </span>
+            </nav>
         </div>
     </header>
+
+        <nav id="menu-fixo">
+            <a href="#title-works">Portfólio</a>
+            <a href="#title-services">Serviços</a>
+            <a href="#projects">Faça Parte do Projeto</a>
+            <a href="#dev">Envie Sua Demanda</a>
+            <a href="#title-footer">Contato</a>
+        </nav>
+
+
     <main>
+
+
         <section>
             <div id="title-works">
                 <span>Meu trabalho</span>
                 <h2>Veja os projetos em destaque</h2>
             </div>
-            <div id="work">               
+            <div id="work">
                 <figure class="card">
                     <img src="css/assets/Thumbnail_Project-01.png" alt="">
                     <figcaption>
@@ -115,7 +122,7 @@
                     <figcaption>
                         <span>Refund</span>
                         <h2>
-                            Um sistema para pedido e acompanhamento de reembolso 
+                            Um sistema para pedido e acompanhamento de reembolso
                         </h2>
                     </figcaption>
                 </figure>
@@ -127,10 +134,11 @@
                             Página com as principais informações para quem quer viajar para Busan
                         </h2>
                     </figcaption>
-                </figure>                
+                </figure>
             </div>
-            
+
         </section>
+
         <section class="background">
             <div id="title-services">
                 <span> Meus Serviços </span>
@@ -154,6 +162,82 @@
                 </div>
             </div>
         </section>
+
+        <section class="container" id="projects">
+            <form class="formulario">
+                <fieldset>
+                    <legend>Colabore em algum dos projetos</legend>
+
+                    <div class="form-grid">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required />
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" />
+
+                        <label for="data">Data de Nascimento:</label>
+                        <input type="date" id="data" name="data_nascimento" />
+
+                        <label for="area">Área de Interesse:</label>
+                        <select id="area" name="area">
+                            <option value="travelgram"> Travelgram </option>
+                            <option value="technews"> Tech News </option>
+                            <option value="paginadereceitas"> Página de receitas </option>
+                            <option value="zingen"> Zingen </option>
+                            <option value="refund"> Refund </option>
+                            <option value="paginadeturismo"> Página de turismo </option>
+                        </select>
+                    </div>
+                </fieldset>
+                <button type="submit">Enviar</button>
+            </form>
+
+        </section>
+
+        <section class="container2" id="dev">
+            <form class="formulario2">
+                <fieldset>
+                    <legend>Solicite o desenvolvimento de um produto</legend>
+                    <div class="form-grid2">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required />
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" />
+
+                        <label for="prazo">Prazo desejado:</label>
+                        <input type="date" id="prazo" name="prazo" />
+
+                        <label for="tipo">Tipo de Aplicação:</label>
+                        <select id="tipo" name="tipo">
+                            <option value="">Selecione</option>
+                            <option value="web">Web</option>
+                            <option value="mobile">Mobile</option>
+                            <option value="desktop">Desktop</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <button type="submit">Enviar Solicitação</button>
+            </form>
+        </section>
+
+        <section class ="painelgeral">
+            <div class="painel-fotos">
+                <div class="foto" style="background-image: url(css/assets/imagem1.jpg);"></div>
+                <div class="foto" style="background-image: url(css/assets/imagem2.jpg);"></div>
+                <div class="foto" style="background-image: url(css/assets/imagem3.jpg);"></div>
+                <div class="foto" style="background-image: url(css/assets/imagem4.jpg);"></div>
+                <div class="foto" style="background-image: url(css/assets/imagem5.jpg);"></div>
+                <div class="foto" style="background-image: url(css/assets/imagem6.jpg);"></div>
+            </div>
+        </section>
+
     </main>
     <footer>
         <div id="title-footer">
@@ -164,23 +248,19 @@
         <div>
             <div id="contact">
                 <img src="css/assets/LinkedinLogo.svg" alt="">
-                <a href="#">Linkedin</a>
+                <a href="https://www.linkedin.com/in/jorge-alves-/">Linkedin</a>
             </div>
             <div id="contact">
                 <img src="css/assets/InstagramLogo.svg" alt="">
-                <a href="#">Instagram</a>
-            </div>
-            <div id="contact">
-                <img src="css/assets/LinkedinLogo.svg" alt="">
-                <a href="#">Linkedin</a>
+                <a href="https://www.instagram.com/jorge_alvees/">Instagram</a>
             </div>
             <div id="contact">
                 <img src="css/assets/GithubLogo.svg" alt="">
-                <a href="#">Github</a>
+                <a href="https://github.com/JorgeAlvezz">Github</a>
             </div>
             <div id="contact">
                 <img src="css/assets/EnvelopeSimple.svg" alt="">
-                <a href="#">Email</a>
+                <a href="mailto:jorge.alves.rodriguez@gmail.com">Email</a>
             </div>
         </div>
     </footer>
